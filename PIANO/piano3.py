@@ -41,9 +41,9 @@ def black_btn(x,note):
 
     if x_coord+35 > mouse[0] > x_coord and y_coord+100>mouse[1]>y_coord:
         pygame.draw.rect(screen,grey,(x_coord,y_coord,35,100))
-
         if click[0] == 1:
             playsound(note,False)
+    
     else:
         pygame.draw.rect(screen,black,(x_coord,y_coord,35,100))
 
