@@ -26,8 +26,6 @@ A_s = 'Music_Notes\A_s.wav'
 
 
 screen = pygame.display.set_mode((800,600))
-
-gameDisplay = pygame.display.set_mode((800,600))
 pygame.display.set_caption("Piano")
 
 def text_objects(text, font):
@@ -111,7 +109,7 @@ while running:
     largeText = pygame.font.Font('freesansbold.ttf',115)
     TextSurf, TextRect = text_objects("Piano", largeText)
     TextRect.center = (400,100)
-    gameDisplay.blit(TextSurf, TextRect)
+    screen.blit(TextSurf, TextRect)
 
 
     white_btn(1,C)
