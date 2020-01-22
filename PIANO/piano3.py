@@ -29,7 +29,6 @@ screen = pygame.display.set_mode((800,600))
 
 gameDisplay = pygame.display.set_mode((800,600))
 pygame.display.set_caption("Piano")
-clock = pygame.time.Clock()
 
 def text_objects(text, font):
     textSurface = font.render(text, True, white)
